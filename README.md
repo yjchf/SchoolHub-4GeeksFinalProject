@@ -1,1 +1,0 @@
-# SchoolHub-4GeeksFinalProject
