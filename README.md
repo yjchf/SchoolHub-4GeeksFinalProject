@@ -52,28 +52,37 @@ cd schoolhub
 
 ### 2. Configurar el Entorno Virtual:  
 ```bash
-python -m venv venv
-source venv/bin/activate # Para Linux/Mac
-venv\Scripts\activate    # Para Windows
+pipenv install
+pipenv shell
 ```
 
-### 3. Instalar Dependencias:  
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configurar Variables de Entorno:  
+### 3. Configurar Variables de Entorno:  
 Crea un archivo `.env` con las siguientes variables:  
 ```
 FLASK_APP=app.py
 FLASK_ENV=development
 SECRET_KEY=tu_clave_secreta
-DATABASE_URI=postgresql://usuario:contraseña@localhost/schoolhub
+DATABASE_URL=postgres://username:password@localhost:5432/schoolhub
+```
+
+**Opciones de Configuración de Base de Datos:**  
+Dependiendo del motor de base de datos que utilices, el valor de `DATABASE_URL` debe seguir uno de estos formatos:  
+
+| Motor     | DATABASE_URL                                        |
+|-----------|-----------------------------------------------------|
+| SQLite    | sqlite:////test.db                                  |
+| MySQL     | mysql://username:password@localhost:port/example    |
+| PostgreSQL| postgres://username:password@localhost:5432/example |
+
+### 4. Ejecutar las Migraciones:  
+```bash
+pipenv run migrate
+pipenv run upgrade
 ```
 
 ### 5. Iniciar el Servidor:  
 ```bash
-flask run
+pipenv run start
 ```
 
 ### 6. Configurar el Frontend:  
