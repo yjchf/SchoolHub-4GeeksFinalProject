@@ -104,15 +104,18 @@ npm start
 
 ---
 
-## 📜 **Licencia**
+## 👥 **Equipo de Desarrollo**
 
-Este proyecto está bajo la licencia MIT.  
+Este proyecto fue desarrollado de manera colaborativa por:
+
+- **Yuneido Chacín**  
+- **[Ezequiel Bellino](https://github.com/ezebellino)**  
+- **[Santiago Montoya](https://github.com/santgeek)**
 
 ---
 
 ## 📧 **Contacto**
 
 Si tienes preguntas o sugerencias, no dudes en contactarme:  
-- **Nombre:** Yuneido Chacín  
-- **Correo Electrónico:** tu_email@example.com  
-- **GitHub:** [TuPerfil](https://github.com/tu-usuario)  
+- **Nombre:** Yuneido Chacín   
+- **GitHub:** [Yuneido Chacin](https://github.com/yjchf)  
